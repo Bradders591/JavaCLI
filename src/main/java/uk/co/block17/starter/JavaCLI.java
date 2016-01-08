@@ -168,7 +168,7 @@ public class JavaCLI {
             String justBuildNumber = manifestBuildNumber.replace("#", "");
             justBuildNumber = justBuildNumber.substring(0, justBuildNumber.indexOf(" "));
 
-            return (shortVersion) ? Constants.APPNAME + " v" + manifestVersion + "." + justBuildNumber : "OverGoals version " + manifestVersion + " build " + manifestBuildNumber;
+            return (shortVersion) ? Constants.APPNAME + " v" + manifestVersion + "." + justBuildNumber : "JavaCLI version " + manifestVersion + " build " + manifestBuildNumber;
         } catch (IOException ex) {
             log.error("Failed to extract version and build details from manifest.");
             return version;
